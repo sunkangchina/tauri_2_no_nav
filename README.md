@@ -22,6 +22,14 @@ tauri dev
 tauri build
 ~~~
 
+生成icons
+
+~~~
+tauri icon logo.png -o src-tauri/icons
+~~~
+
+需要 `1024x1024` 正方形图片
+
 ## vue 状态栏
 ~~~
 <div id="title-bar" data-tauri-drag-region>
