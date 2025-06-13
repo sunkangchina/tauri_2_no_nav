@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Demo App",
+  "version": "0.1.0",
+  "identifier": "com.ken.ken",
+  "build": {
+    "beforeDevCommand": "cd ../vue && npm run dev",
+    "frontendDist": "../vue/dist",  
+    "devUrl": "http://localhost:5173" 
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Demo",
+        "width": 800,
+        "height": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "transparent": true,
+        "decorations": false,
+        "theme":"Dark"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
